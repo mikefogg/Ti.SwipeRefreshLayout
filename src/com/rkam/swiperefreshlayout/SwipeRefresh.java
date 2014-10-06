@@ -3,13 +3,14 @@ package com.rkam.swiperefreshlayout;
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.titanium.proxy.TiViewProxy;
-import org.appcelerator.titanium.view.TiUIView;
 import org.appcelerator.titanium.util.TiRHelper;
 import org.appcelerator.titanium.util.TiRHelper.ResourceNotFoundException;
+import org.appcelerator.titanium.view.TiUIView;
 
-import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
-import android.view.LayoutInflater;
 import android.util.Log;
+import android.view.LayoutInflater;
+
+import com.rkam.swiperefreshlayout.SwipeRefreshLayout.OnRefreshListener;
 
 public class SwipeRefresh extends TiUIView {
 	
@@ -75,7 +76,7 @@ public class SwipeRefresh extends TiUIView {
 	}
 	
 	public void setRefreshing(boolean refreshing) {
-		this.layout.setRefreshing(refreshing);
+		this.layout.setRefreshing(refreshing);		
 	}
 	
 }

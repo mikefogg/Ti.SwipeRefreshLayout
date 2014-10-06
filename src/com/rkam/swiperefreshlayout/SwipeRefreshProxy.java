@@ -23,12 +23,16 @@ public class SwipeRefreshProxy extends TiViewProxy {
 	
 	@Kroll.method
 	public void setRefreshing(boolean refreshing) {
-		this.swipeRefresh.setRefreshing(refreshing);
-		return;
+		if (this.swipeRefresh != null){
+			this.swipeRefresh.setRefreshing(refreshing);
+		}		
 	}
 	
 	@Kroll.method @Kroll.getProperty
 	public boolean isRefreshing() {
-		return this.swipeRefresh.isRefreshing();
+		if (this.swipeRefresh != null){
+			return this.swipeRefresh.isRefreshing();
+		}
+		return false;
 	}
 }
