@@ -13,17 +13,23 @@ public class SwipeRefreshProxy extends TiViewProxy {
 	
 	public SwipeRefreshProxy() {
 		super();
+		this.swipeRefresh = new SwipeRefresh(this);
 	}
 
 	@Override
 	public TiUIView createView(Activity activity) {
-		swipeRefresh = new SwipeRefresh(this);
 		return this.swipeRefresh;
 	}
 	
 	@Kroll.method
 	public void setRefreshing(boolean refreshing) {
 		this.swipeRefresh.setRefreshing(refreshing);
+		return;
+	}
+	
+	@Kroll.method
+	public void add(TiViewProxy view) {
+		this.swipeRefresh.add(view);
 		return;
 	}
 	

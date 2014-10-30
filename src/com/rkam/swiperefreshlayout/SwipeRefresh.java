@@ -61,15 +61,24 @@ public class SwipeRefresh extends TiUIView {
 		if (d.containsKey(PROPERTY_VIEW)) {
 			Object view = d.get(PROPERTY_VIEW);
 			if (view != null && view instanceof TiViewProxy) {
-				this.view = (TiViewProxy) view;
-				this.layout.setNativeView(this.view.getOrCreateView().getNativeView());
-				this.layout.addView(this.view.getOrCreateView().getOuterView());
-				this.layout.setColorScheme(color1, color2, color3, color4);
-			}
+					this.view = (TiViewProxy) view;
+					this.layout.setNativeView(this.view.getOrCreateView().getNativeView());
+					this.layout.addView(this.view.getOrCreateView().getOuterView());
+					this.layout.setColorScheme(color1, color2, color3, color4);
+				}
 		}
 		super.processProperties(d);
 	}
-	
+
+	public void add(TiViewProxy view) {
+		if (view != null && view instanceof TiViewProxy) {
+			this.view = (TiViewProxy) view;
+			this.layout.setNativeView(this.view.getOrCreateView().getNativeView());
+			this.layout.addView(this.view.getOrCreateView().getOuterView());
+			this.layout.setColorScheme(color1, color2, color3, color4);
+		}
+	}
+
 	public boolean isRefreshing() {
 		return this.layout.isRefreshing();
 	}
