@@ -1,9 +1,11 @@
 Ti.SwipeRefreshLayout Titanium Module
 ===========================================
 
-Building the module on Titanium Studio
+![tiswipe](https://cloud.githubusercontent.com/assets/878389/4853094/b9a89378-6082-11e4-8a85-28159b1a54cd.gif)
+
+Building the module
 -----------
-To be added later on.
+You'll need to modify "build.xml" and ".classpath" according to paths on your machine.
 	
 
 To initialize
