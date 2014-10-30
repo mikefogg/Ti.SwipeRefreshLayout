@@ -2,7 +2,6 @@ package com.rkam.swiperefreshlayout;
 
 import android.content.Context;
 import android.support.v4.view.ViewCompat;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AbsListView;
