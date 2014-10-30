@@ -58,3 +58,17 @@ Check if refreshing
 The state of the SwipeRefreshLayout, whether the animation is showing or not.
 
 	var isRefreshing = swipeRefresh.isRefreshing();
+
+Alloy
+-----------
+Alloy usage example:
+
+	<Alloy>
+		<Window>
+			<SwipeRefresh module="com.rkam.swiperefreshlayout">
+				<ListView>
+					<!-- listview tags -->
+				</ListView>
+			</SwipeRefresh>
+		</Window>
+	</Alloy>

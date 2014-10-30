@@ -15,4 +15,4 @@ name: swiperefreshlayout
 moduleid: com.rkam.swiperefreshlayout
 guid: fc0f2168-ac27-4239-bcb0-c51d7683eb05
 platform: android
-minsdk: 3.2.3.GA
+minsdk: 3.4.0.GA
